@@ -1,0 +1,36 @@
+page-part-listing {
+
+
+        .logo {
+            width: 100px;
+            height: 100px;
+          }
+    
+          .text-primary {
+            color: color($colors, primary);
+          }
+    
+        #welcome{
+            
+            
+            background-image: url(../../assets/imgs/bg.jpg);
+            background-size: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+            h1{
+                font-size: 52px;
+                margin-top: 50px;
+            }
+        
+            .marginTop{
+                margin-top: 125px;
+            }
+        }
+    
+    
+
+}

@@ -1,0 +1,34 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Display PC Part</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      PC Parts
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of PartList$ | async" detail-push
+    navPush="EditPartListPage" [navParams] = "{item: item}">
+      <ion-card>
+      <br>
+      <div><b>Processor :</b>{{item.processor}}</div>
+      <br>
+      <div><b>Graphic Card:</b>{{item.graphicCard}}</div>
+      <br>
+      <div><b>Storage :</b>{{item.storage}}</div>
+      <br>
+      <div><b>Motherboard :</b>{{item.motherboard}}</div>
+      <br>
+      <div><b>Quantity :</b>{{item.quantity}}</div>
+      <br>
+    </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,41 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{item?.processor}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-item>
+        <ion-label>Processor</ion-label>
+        <ion-input [(ngModel)]="item.processor" placeholder="i7-7700k"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label>Graphic Card</ion-label>
+          <ion-input [(ngModel)]="item.graphicCard" placeholder="GTX 1080 TI"></ion-input>
+        </ion-item>
+    
+      <ion-item>
+          <ion-label>Storage</ion-label>
+          <ion-input [(ngModel)] = "item.storage" placeholder="SSD/HDD"></ion-input>
+        </ion-item>
+    
+      <ion-item>
+          <ion-label>Motherboard</ion-label>
+          <ion-input [(ngModel)] = "item.motherboard" placeholder="H310M"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label>Quantity</ion-label>
+          <ion-input [(ngModel)] = "item.quantity" placeholder="1" type="number"></ion-input>
+        </ion-item>
+
+        <button ion-button block clear (click)="saveItem(item)">Save</button>
+
+        <button ion-button block clear color="danger" (click)="removeItem(item)">Delete</button>
+</ion-content>

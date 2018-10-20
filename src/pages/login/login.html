@@ -1,0 +1,35 @@
+
+
+
+
+<ion-content padding id="welcome">
+    <div padding text-center class="center">
+        <div class="logo"></div>
+        <br>
+        <br>
+        <br>
+        <h2 ion-text class="text-primary">
+          <strong>All-In-One PC Builder and Bottlenecker</strong>
+        </h2>
+        <br>
+        <br>
+
+
+
+
+        <ion-item>
+            <ion-label fixed>Email</ion-label>
+            <ion-input  type="text" [(ngModel)]="user.email"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label fixed>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+
+          <br>
+          <button ion-button round (click)="login(user)">Login</button>
+          <button ion-button round outline (click)="back()">back</button>
+
+    </div>
+</ion-content>

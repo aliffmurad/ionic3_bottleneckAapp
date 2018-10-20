@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Navigation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div id="floating-panel">
+    <b>Start:</b>
+    <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+      <option value="mara university of technology shah alam campus">UiTM Shah Alam</option>
+    </select>
+    <br>
+    <b>End: </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="Digital Mall Petaling">Digital Mall</option>
+      <option value="Sunway pyramid">Sunway Pyramid</option>
+      <option value="Plaza low yat">Plaza Low Yat</option>
+    </select>
+    </div>
+    <div #map id="map"></div>
+</ion-content>

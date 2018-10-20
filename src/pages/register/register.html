@@ -1,0 +1,32 @@
+
+<ion-content padding id="welcome">
+  <div padding text-center class="center">
+  <div class="logo"></div>
+    <br>
+    <br>
+    <br>
+    <h2 ion-text class="text-primary">
+      <strong>Account Registration</strong>
+    </h2>
+    
+  <br>
+  <br>
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+  <p ion-text color="secondary">Email Format: @ and .com is required</p>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  <p ion-text color="secondary">Password must be at least 8 characters</p>
+
+  <br>
+  <button ion-button round (click)="register(user)">Register</button>
+  <button ion-button round outline (click)="back()">Back</button>
+  </div>
+
+
+</ion-content>

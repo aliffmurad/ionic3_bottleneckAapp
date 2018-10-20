@@ -1,0 +1,58 @@
+
+
+
+<ion-content padding id="welcome">
+<div padding text-center class="center">
+  <br>
+  <h2 ion-text color="secondary" text-center><strong>Pick parts and calculate</strong></h2>
+      <br>
+      <br>
+<ion-card>
+    <ion-item > 
+        <ion-label>Processor</ion-label>
+        <ion-select [(ngModel)]="Processor">
+          <ion-option value="i3 6100">
+            i3-6100</ion-option>
+            <ion-option value="i5 6400">
+                i5-6400</ion-option>
+                <ion-option value="i7 6700">
+                    i7-6700</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item > 
+          <ion-label>Graphic Card</ion-label>
+          <ion-select [(ngModel)]="graphicCard">
+            <ion-option value="GTX 650">
+                  GTX 650</ion-option>
+            <ion-option value="GTX 750 Ti">
+              GTX 750 Ti</ion-option>
+              <ion-option value="GTX 1050 Ti">
+                  GTX 1050 TI</ion-option>
+                  <ion-option value="GTX 1060">
+                      GTX 1060</ion-option>
+                      <ion-option value="GTX 1070">
+                          GTX 1070</ion-option>
+                          <ion-option value="GTX 1080">
+                              GTX 1080</ion-option>
+          </ion-select>
+        </ion-item>
+  </ion-card>
+
+
+      <br>
+      <button ion-button full round (click)="addItem(Processor,graphicCard)">Calculate</button>
+      <button ion-button full clear (click)="back()">Back</button>
+      <br>
+      <br>
+
+      <ion-scroll scrollX="true" style="white-space:nowrap; height:300px;">
+        <img src="assets/imgs/graphiccard/gtx1050.png">
+        <img src="assets/imgs/graphiccard/gtx1060.jpg">
+        <img src="assets/imgs/graphiccard/gtx1070.jpg">
+        <img src="assets/imgs/graphiccard/gtx1080.jpg">
+      </ion-scroll>
+
+
+  </div>
+</ion-content>
